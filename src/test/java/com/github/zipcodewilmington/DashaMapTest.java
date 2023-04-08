@@ -41,7 +41,13 @@ public class DashaMap1Test {
     }
     @Test
     public void testGet(){
+    String key = "ki";
+    String expected = "energy";
+    map.set(key, expected);
 
+    String actual = map.get(key);
+
+    Assert.assertEquals(expected, actual);
     }
     @Test
     public void testIsEmpty(){
