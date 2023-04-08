@@ -23,14 +23,21 @@ public class DashaMap1Test {
         long expected = 1;
 
         map.set(key, value);
-        long actual = map.bucketsize("k");
+        long actual = map.bucketSize("k");
 
         Assert.assertEquals(expected, actual);
 
     }
     @Test
     public void testDelete(){
+        String key =  "key";
+        String value = "value";
+        long expected = 0;
 
+        map.set(key, value);
+        long actual = map.bucketSize("k");
+
+        Assert.assertEquals(expected, actual);
     }
     @Test
     public void testGet(){
