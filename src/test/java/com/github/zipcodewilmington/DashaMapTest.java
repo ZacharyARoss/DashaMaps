@@ -51,11 +51,28 @@ public class DashaMap1Test {
     }
     @Test
     public void testIsEmpty(){
+        String e = "e";
+        String key = "dre";
 
+        map.set(key, e);
+
+        Assert.assertFalse(map.isEmpty());
+    }
+
+    @Test
+    public void testIsEmpty2(){
+        Assert.assertTrue(map.isEmpty());
     }
     @Test
     public void testSize(){
+        long expected = 2;
 
+        map.set("i dont know", "same thing");
+        map.set("anything", "samer thing");
+
+        long actual = map.size();
+
+        Assert.assertEquals(expected, actual);
     }
 
 }
